@@ -90,7 +90,6 @@ var reply_with_attachments = {
     'attachments': [
       {
         "fallback": "Did somebody say Spark?",
-            "pretext": "Did somebody say Spark?",
             "image_url": "https://miro.medium.com/fit/c/240/240/1*5a5L0p2vEuDJx10zVQUSqg.jpeg",
             "thumb_url": "https://miro.medium.com/fit/c/240/240/1*5a5L0p2vEuDJx10zVQUSqg.jpeg",
              "ts": 123456789
