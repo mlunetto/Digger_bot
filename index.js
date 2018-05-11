@@ -77,7 +77,7 @@ controller.on('bot_channel_join', function (bot, message) {
 
 controller.hears('hello', 'direct_mention','direct_message', function (bot, message) {
     bot.reply(message, 'sup brah');
-});
+}
 
 controller.hears('letters', 'direct_mention', 'mention', 'direct_message', function (bot, message) {
     bot.reply(message, 'Letters should for sure go cat skiing with you guys!');
