@@ -75,7 +75,7 @@ controller.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
 });
 
-controller.hears('hello', ['direct_message','direct_mention','mention','ambient'], function (bot, message) {
+controller.hears('hello', ['direct_message','direct_mention','mention'], function (bot, message) {
     bot.reply(message, 'sup brah');
 });
 
@@ -89,9 +89,9 @@ var reply_with_attachments = {
     'text': 'This is a pre-text',
     'attachments': [
       {
-        'fallback': 'To be useful, I need you to invite me in a channel.',
+        'fallback': 'Did somebody say Spark?',
         'pretext': 'Did somebody say Spark?',
-        'text': 'To be useful, I need you to invite me in a channel ',
+        'text': 'Hey there',
         'color': '#7CD197'
       }
     ],
