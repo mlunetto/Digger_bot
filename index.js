@@ -86,16 +86,16 @@ controller.hears('letters', ['direct_message','direct_mention','mention','ambien
 controller.hears('spark', ['direct_message','direct_mention','mention','ambient'],function(bot,message) {
 var reply_with_attachments = {
     'username': 'Digger' ,
-    'pretext': 'Did somebody say Spark?',
+    'text': 'Did somebody say Spark?',
     'attachments': [
       {
-        'fallback': 'Did somebody say Spark?',
-        'text': 'Hey there',
-        'color': '#7CD197'
-        "image_url": "https://miro.medium.com/fit/c/240/240/1*5a5L0p2vEuDJx10zVQUSqg.jpeg",
+        "fallback": "Did somebody say Spark?",
+            "pretext": "Did somebody say Spark?",
+            "image_url": "https://miro.medium.com/fit/c/240/240/1*5a5L0p2vEuDJx10zVQUSqg.jpeg",
+            "thumb_url": "https://miro.medium.com/fit/c/240/240/1*5a5L0p2vEuDJx10zVQUSqg.jpeg",
+             "ts": 123456789
       }
     ],
-    
     }
 
   bot.reply(message, reply_with_attachments);
