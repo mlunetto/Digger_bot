@@ -75,11 +75,11 @@ controller.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
 });
 
-controller.hears('hello', function (bot, message) {
+controller.hears('hello', ['direct_message','direct_mention','mention','ambient'], function (bot, message) {
     bot.reply(message, 'sup brah');
 });
 
-controller.hears('letters', function (bot, message) {
+controller.hears('letters', ['direct_message','direct_mention','mention','ambient'], function (bot, message) {
     bot.reply(message, 'Letters should for sure go cat skiing with you guys!');
 });
 
