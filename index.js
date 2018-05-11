@@ -83,6 +83,24 @@ controller.hears('letters', ['direct_message','direct_mention','mention','ambien
     bot.reply(message, 'Letters should for sure go cat skiing with you guys!');
 });
 
+controller.hears('spark', ['direct_message','direct_mention','mention','ambient'],function(bot,message) {
+var reply_with_attachments = {
+    'username': 'Digger' ,
+    'text': 'This is a pre-text',
+    'attachments': [
+      {
+        'fallback': 'To be useful, I need you to invite me in a channel.',
+        'pretext': 'Did somebody say Spark?',
+        'text': 'To be useful, I need you to invite me in a channel ',
+        'color': '#7CD197'
+      }
+    ],
+    "image_url": "https://miro.medium.com/fit/c/240/240/1*5a5L0p2vEuDJx10zVQUSqg.jpeg",
+    }
+
+  bot.reply(message, reply_with_attachments);
+});
+
 /**
  * AN example of what could be:
  * Any un-handled direct mention gets a reaction and a pat response!
